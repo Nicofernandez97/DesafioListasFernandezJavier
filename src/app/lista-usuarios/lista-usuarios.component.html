@@ -1,0 +1,19 @@
+<div class="titulo">
+    <h2> Calificaciones de alumnos actualizadas al {{diaActual | date: 'dd/mm/yyyy'}} </h2>
+</div>
+<ul *ngFor="let alumno of listaAlumnos">
+    <div class="container-lista" [ngClass]=" alumno.estado ? 'aprobado' : 'desaprobado'">
+        <li>
+            <h3>Nombre: {{alumno.nombre | titlecase}}</h3>
+        </li>
+        <li>
+            <p> Edad: {{alumno.edad}} años </p>
+        </li>
+        <li>
+            <p>Ciudad de residencia: {{alumno.ciudad}} </p>
+        </li>
+        <li>
+            <p>Calificación del examen: {{alumno.notaPrimerParcial}} </p>
+        </li>
+    </div>
+</ul>

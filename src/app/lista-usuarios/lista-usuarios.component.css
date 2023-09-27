@@ -1,0 +1,19 @@
+.aprobado {
+    background-color: green;
+}
+
+.desaprobado {
+    background-color: red;
+}
+
+.container-lista {
+    width: 300px;
+    height: fit-content;
+    display: grid;
+    list-style-type: none;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
